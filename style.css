@@ -1,0 +1,385 @@
+.about {
+  color: red;
+}
+
+.introduction {
+  text-align: justify;
+}
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 54px;
+  text-align: center;
+  text-shadow: 0 1px 3px #555;
+}
+
+.chat {
+  border: 1px solid black;
+  display: grid;
+  width: 1150px;
+  height: 100%;
+  margin: 30px auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 300px 150px;
+  grid-template-areas: "l l c c c c c c c c c c" "l l c c c c c c c c c c" "l l m m m m m m m m m m";
+}
+
+.chat .chat-list {
+  grid-area: l;
+}
+
+.chat .conversation {
+  grid-area: c;
+}
+
+.chat .box-message {
+  grid-area: m;
+}
+
+.book-card-container {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: ". . p p p . i i i i . ." ". . p p p . i i i i . ." ". . d d d d d d d d . ." ". . c c c c c c c c . .";
+}
+
+.book-card-container .book-card-img {
+  grid-area: p;
+  display: flex;
+  justify-content: center;
+}
+
+.book-card-container .book-card-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.book-card-container .book-card-info {
+  grid-area: i;
+  background-color: aqua;
+}
+
+.book-card-container .book-card-info span {
+  display: block;
+}
+
+.book-card-container .book-card-description {
+  margin: 20px 0 0;
+  min-height: 50px;
+  background-color: #33b5e9;
+  grid-area: d;
+}
+
+.book-card-container .book-comments {
+  grid-area: c;
+  border: #555 1px solid;
+  margin: 10px 0 0 0;
+}
+
+.book-card-container .book-comments .b-comment {
+  background-color: blanchedalmond;
+  margin-bottom: 5px;
+}
+
+.book-card-container .book-comments .b-comment .a-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0 0 10px;
+  color: cornflowerblue;
+}
+
+.book-card-container .book-comments .b-comment .a-cont :last-child {
+  color: #555;
+  font-size: 13px;
+  padding-right: 10px;
+}
+
+.book-card-container .book-comments .b-comment p {
+  margin-bottom: 0px;
+  padding: 0 0 10px 25px;
+}
+
+.fileInput {
+  border-bottom: 4px solid lightgray;
+  border-right: 4px solid lightgray;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  padding: 10px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.imgPreview {
+  text-align: center;
+  margin: 5px 15px;
+  height: 200px;
+  width: 500px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-top: 5px solid gray;
+  border-bottom: 5px solid gray;
+}
+
+.imgPreview > img {
+  width: 100%;
+  height: 100%;
+}
+
+.previewText {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.submitButton {
+  padding: 12px;
+  margin-left: 10px;
+  background: white;
+  border: 4px solid lightgray;
+  border-radius: 15px;
+  font-weight: 700;
+  font-size: 10pt;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background: #efefef;
+}
+
+.centerText {
+  text-align: center;
+  width: 500px;
+}
+
+body {
+  margin: 0px;
+}
+
+.book-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 988px;
+  margin: auto;
+}
+
+.bookMiniCard {
+  display: flex;
+  flex-direction: column;
+  width: 237px;
+  margin: 5px;
+  padding: 10px;
+  font-family: "Roboto, Arial";
+}
+
+.bookMiniCard:hover {
+  cursor: pointer;
+}
+
+.bookMiniCard:hover > .bookMiniCard-title {
+  text-decoration: underline;
+}
+
+.bookMiniCard-title {
+  margin: 10px auto 0px;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  height: 34px;
+}
+
+.bookMiniCard-img {
+  margin: 15px auto;
+}
+
+.bookMiniCard-desc {
+  margin: 0px auto;
+}
+
+.page {
+  display: grid;
+  width: 1150px;
+  margin: 30px auto;
+  grid-row-gap: 15px;
+  grid-template-columns: 3fr 250px;
+  grid-template-rows: 50px 886px;
+  grid-template-areas: "n u" "b u";
+}
+
+.page .book-wrapper {
+  max-width: 830px;
+}
+
+.page .bookMiniCard {
+  width: 265px;
+}
+
+.sm-img {
+  display: flex;
+  flex-basis: 50px;
+  justify-content: center;
+}
+
+.view-books {
+  grid-area: n;
+  width: 818px;
+  margin: 0px auto;
+}
+
+.user {
+  grid-area: u;
+  max-height: 40 0px;
+}
+
+.user-ava {
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+.user-ava img {
+  width: 200px;
+  object-fit: cover;
+}
+
+.user-ava div.ava {
+  width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.user-books {
+  grid-area: b;
+  overflow: auto;
+}
+
+#notification-wrapper .toast-notification span {
+  display: inline-block !important;
+  border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 5px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ecedee;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background-color: #6dc0c8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #56999f;
+}
+
+::-webkit-resizer {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 4px;
+  height: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+.spinner-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.orbit-spinner,
+.orbit-spinner * {
+  box-sizing: border-box;
+}
+
+.orbit-spinner {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  perspective: 800px;
+}
+
+.orbit-spinner .orbit {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.orbit-spinner .orbit:nth-child(1) {
+  left: 0%;
+  top: 0%;
+  animation: orbit-spinner-orbit-one-animation 1200ms linear infinite;
+  border-bottom: 3px solid #33b5e9;
+}
+
+.orbit-spinner .orbit:nth-child(2) {
+  right: 0%;
+  top: 0%;
+  animation: orbit-spinner-orbit-two-animation 1200ms linear infinite;
+  border-right: 3px solid #33b5e9;
+}
+
+.orbit-spinner .orbit:nth-child(3) {
+  right: 0%;
+  bottom: 0%;
+  animation: orbit-spinner-orbit-three-animation 1200ms linear infinite;
+  border-top: 3px solid #33b5e9;
+}
+
+@keyframes orbit-spinner-orbit-one-animation {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes orbit-spinner-orbit-two-animation {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes orbit-spinner-orbit-three-animation {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+
+/* Portrait and Landscape */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .page {
+    width: 300px;
+  }
+}
+
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
