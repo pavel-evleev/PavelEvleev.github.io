@@ -17,6 +17,10 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+img {
+  image-orientation: from-image;
+}
+
 .el-center {
   display: flex;
   align-items: center;
@@ -316,7 +320,12 @@ body {
 }
 
 .bookMiniCard-img {
+  overflow: hidden;
   margin: 15px auto;
+}
+
+.bookMiniCard-img .castomImg {
+  object-fit: cover;
 }
 
 .bookMiniCard-img .preview-default {
