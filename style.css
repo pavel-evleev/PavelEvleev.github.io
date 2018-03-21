@@ -397,7 +397,7 @@ body {
 }
 
 .user {
-  grid-row: 1/span 11;
+  grid-row: 1/ spa;
   grid-column: 16/span 20;
   max-height: 40 0px;
 }
@@ -585,6 +585,9 @@ body {
     height: 114px;
     border-radius: 0 0 10px 10px !important;
   }
+  .user .view-statistics {
+    display: none;
+  }
   .user .user-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -731,7 +734,7 @@ body {
   }
   .page .user {
     grid-column: 9/span 12;
-    grid-row: 1/14;
+    grid-row: 1/span 14;
   }
   .page .user .user-container {
     display: flex;
@@ -824,7 +827,7 @@ body {
   }
   .user {
     grid-column: 10/span 12;
-    grid-row: 1/14;
+    grid-row: 1/span 14;
   }
   .user .user-container {
     display: flex;
@@ -910,7 +913,7 @@ body {
   }
   .user {
     grid-column: 10/span 12;
-    grid-row: 1/14;
+    grid-row: 1/ span 14;
   }
   .user .user-container {
     display: flex;
@@ -986,7 +989,7 @@ body {
   }
   .user {
     grid-column: 13/span 16;
-    grid-row: 1/14;
+    grid-row: 1/ span 14;
   }
   .user .user-container {
     display: flex;
