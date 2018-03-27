@@ -338,6 +338,7 @@ body {
   font-size: 16px;
   color: black;
   height: 34px;
+  text-align: -webkit-center;
 }
 
 .bookMiniCard-img {
@@ -395,10 +396,16 @@ body {
   border-radius: 15px !important;
 }
 
+.list-item-radius :nth-child(2) {
+  display: block;
+  margin: auto 0;
+}
+
 .sm-img {
   display: flex;
   flex-basis: 50px;
   justify-content: center;
+  align-items: center;
 }
 
 .view-books {
@@ -696,6 +703,9 @@ body {
     width: 150px;
     height: 150px;
   }
+  .book-wrapper .list-item-radius :nth-child(2) {
+    max-width: 130px !important;
+  }
   .add-b-grid {
     display: initial;
   }
@@ -824,6 +834,9 @@ body {
     width: 150px;
     height: 150px;
   }
+  .book-wrapper .list-item-radius :nth-child(2) {
+    max-width: 99px !important;
+  }
   .add-b-grid {
     display: initial;
   }
@@ -938,6 +951,9 @@ body {
   }
   .page .book-wrapper {
     width: 476px !important;
+  }
+  .page .book-wrapper .list-item-radius {
+    width: 96% !important;
   }
   .user {
     grid-column: 10/span 12;
